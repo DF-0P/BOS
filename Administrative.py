@@ -25,7 +25,7 @@ import json
 arrangement = ["Name", "Price", "No. Available"] #used for the position to get from the json object
 items_name = {} #used to get the index of the item 
 def ite():     #function to use for enumerating the idex and name of the nanme of the foods
-    for idx, i in enumerate(h["food"]):
+    for idx, i in enumerate(h["food"], start=1):
         print(idx, i["Name"])
         items_name[str(idx)] = i["Name"]
 
