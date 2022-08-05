@@ -1,0 +1,40 @@
+{
+    "food": [
+        {
+            "index": 1,
+            "Name": "Chicken Burger",
+            "Price": 20,
+            "No. Available": 30
+        },
+        {
+            "index": 2,
+            "Name": "Smoothy",
+            "Price": 10,
+            "No. Available": 20
+        },
+        {
+            "index": 3,
+            "Name": "Meat Pie",
+            "Price": 15,
+            "No. Available": 23
+        },
+        {
+            "index": 4,
+            "Name": "Beans",
+            "Price": "100",
+            "No. Available": "210"
+        },
+        {
+            "index": 5,
+            "Name": "Yam",
+            "Price": "343",
+            "No. Available": "290"
+        },
+        {
+            "index": 6,
+            "Name": "plaintain",
+            "Price": "890",
+            "No. Available": "23"
+        }
+    ]
+}
