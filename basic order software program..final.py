@@ -2,57 +2,24 @@
 basic order system made by Dominic Francis
 Date of Make: Monday, May 23,2022
 Date of Edit: Thursday, August 4, 2022
-
+Facebook : https://www.facebook.com/D.F.0P.1694
 '''
 import time
 
-
 menu = {"chicken burger": 20, "smoothy": 10, "meat pie": 15}
 resources = {"1" : [30, "chicken burger"], "2": [20, "smoothy"], "3": [23, "meat pie"]}
-#menu_list = {"1": "chicken burger", "2": "smoothy", "3": "meat pie"} #this was used in older version of this program
-pr, sr, fr= [], [], [] #pr = customer choice price, sr = number ordered, fr = choice of food from menu 
+pr, sr, fr= [], [], []
 
-def finish(): #had to put this in a function so that i could call it even when the resources is not enough 
-    """
-    gr = 0
-    sum = 0
-    """
-    gr, sum = 0, 0 #variables to hold the values to be calculated with and written like this reduces number of lines
-    """ for i in pr:
-        sum += i
-    for i in sr:
-        gr += i
-        #the code here is commented out because it is obselete , still working but old and i have made a new shorter way below """
+def finish():
+    gr, sum = 0, 0 
     for i in range(len(pr)):
         sum += pr[i]
         gr += sr[i]
     print(f"your order for {fr}, {gr} quantity price is {sum}")
-    #print(f"\n pr : {pr}, sr : {sr}, length of pr : {len(pr)}, length of sr : {len(sr)}") 
-    #i used the above code to define the new for loop to get add the values to sum and gr
-    #in a simulation pr is the list of the customer order prices and sr gives the quantity ordered each time
-    #one notable thing is that the length of the items in the individual list is same, hence we can use just on of their length
-
+    
 def kkkk():
         a = input("what's your order: ")
-        """ if (a == "chicken burger") or (a == "1"):
-            if a == "1":
-                ab = resources.get(a)[1]
-            pieces(a, ab)
-        elif (a == "smoothy") or (a == "2"):
-            if a == "2":
-                ab = resources.get(a)[1]
-            pieces(a, ab)
-        elif (a == "meat pie") or (a == "3"):
-            if a == "3":
-                ab = resources.get(a)[1]
-            pieces(a, ab)
-        elif (a == "r"):
-            print(menu)
-            print(resources) 
-        #this commented code was used in previous version  still working but old, i have made a more vital one below
-        """
-        #if a != "": #this is an old if condition that allowed any string rather than only key values in the dict keys
-        if a in resources.keys(): #this is a more valid condition that also validates the availbility of a in the dict keys
+        if a in resources.keys():
             ab = resources.get(a)[1]
             pieces(a, ab)
         elif (a == "r"):
